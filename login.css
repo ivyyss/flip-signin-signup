@@ -1,0 +1,78 @@
+body{
+    background: url(http://img5.imgtn.bdimg.com/it/u=3890662277,3228925564&fm=26&gp=0.jpg) center center no-repeat;
+    background-size: cover;
+}
+.registerModule, .loginModule{
+    border: 1px solid grey;
+    box-shadow: 10px 5px 5px #00000048;
+    background: white;
+    width: 400px;  
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+} 
+
+header .login{
+float: right;
+margin-right: 20px;
+font-size: 20px;
+}
+
+.Active
+{
+    text-decoration:underline;
+    font-size: 20px;
+}
+
+.tabs{
+    text-align: center;
+}
+.registerTab, .loginTab{
+    font-size: 20px;
+    padding: 0px 10px;
+}
+.closeTab{
+    float: right;
+}
+input{
+    margin: 10px;
+    padding:0px 0px 0px 30px;
+}
+form span{
+    margin: 10px;
+    position: absolute;
+    left: 30px;
+}
+
+.btn{
+    font-size: 20px;
+}
+.flip-module{
+    display: none; 
+}
+
+.flip-module.register .registerModule{
+    transform: translate(-50%,-50%) rotateY(0deg);
+    backface-visibility: hidden;
+    transition: all 1s;
+}
+
+.flip-module.register .loginModule{
+    transform: translate(-50%,-50%) rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all 1s;
+}
+
+.flip-module.login .registerModule{
+    transform: translate(-50%,-50%) rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all 1s;
+}
+
+.flip-module.login .loginModule{
+    transform: translate(-50%,-50%) rotateY(0deg);
+    backface-visibility: hidden;
+    transition: all 1s;
+}
